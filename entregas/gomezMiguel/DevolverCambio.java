@@ -37,6 +37,16 @@ public class DevolverCambio {
         cambio = cambio % BILLETES5;
         System.out.println(numBilletes5 + " billete(s) de 5 €");
 
+        final int MONEDAS2 = 2;
+        int numMonedas2 = cambio / MONEDAS2;
+        cambio = cambio % MONEDAS2;
+        System.out.println(numMonedas2 + " moneda(s) de 2 €");
+
+        final int MONEDAS1 = 1;
+        int numMonedas1 = cambio / MONEDAS1;
+        cambio = cambio % MONEDAS1;
+        System.out.println(numMonedas1 + " moneda(s) de 1 €");
+
         scanner.close();
     }
 }
