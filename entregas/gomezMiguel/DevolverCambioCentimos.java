@@ -39,6 +39,16 @@ public class DevolverCambioCentimos {
         cambiocent = cambiocent % BILLETES5;
         System.out.println(numBilletes5 + " billete(s) de 5 €");
 
+        final int MONEDAS2 = 200;
+        int numMonedas2 = cambiocent / MONEDAS2;
+        cambiocent = cambiocent % MONEDAS2;
+        System.out.println(numMonedas2 + " moneda(s) de 2 €");
+
+        final int MONEDAS1 = 100;
+        int numMonedas1 = cambiocent / MONEDAS1;
+        cambiocent = cambiocent % MONEDAS1;
+        System.out.println(numMonedas1 + " moneda(s) de 1 €");
+
         scanner.close();
     }
 }
