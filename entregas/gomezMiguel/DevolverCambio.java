@@ -27,6 +27,16 @@ public class DevolverCambio {
         cambio = cambio % BILLETES20;
         System.out.println(numBilletes20 + " billete(s) de 20 €");
 
+        final int BILLETES10 = 10;
+        int numBilletes10 = cambio / BILLETES10;
+        cambio = cambio % BILLETES10;
+        System.out.println(numBilletes10 + " billete(s) de 10 €");
+
+        final int BILLETES5 = 5;
+        int numBilletes5 = cambio / BILLETES5;
+        cambio = cambio % BILLETES5;
+        System.out.println(numBilletes5 + " billete(s) de 5 €");
+
         scanner.close();
     }
 }
